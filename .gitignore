@@ -1,0 +1,24 @@
+# Ignore sensitive keys
+kopskey.pem
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform lock files
+.terraform.lock.hcl
+
+# Ignore entire .terraform directories in any exercise
+.terraform/
+
+# Ignore specific provider binaries
+exercise2/.terraform/providers/registry.terraform.io/hashicorp/aws/5.68.0/windows_amd64/terraform-provider-aws_v5.68.0_x5.exe
+exercise3/.terraform/providers/registry.terraform.io/hashicorp/aws/5.68.0/windows_amd64/terraform-provider-aws_v5.68.0_x5.exe
+
+# Ignore vars.tf files in exercises (if they are sensitive)
+exercise2/vars.tf
+exercise3/vars.tf
+
+# Ignore other specific files (like devkeys) in exercise3
+exercise3/devkey
+exercise3/devkey.pub
